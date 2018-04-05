@@ -44,6 +44,7 @@ echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/
 curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
 apt-get update
 apt-get install neofetch
+apt-get install figlet -y
 
 echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/sources.list
 curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
@@ -227,55 +228,13 @@ echo "unset HISTFILE" >> /etc/profile
 clear
 
 # info
-echo "~mscvip~"
-echo "Autoscript Include:" | tee log-install.txt
-echo "===========================================" | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Service"  | tee -a log-install.txt
-echo "-------"  | tee -a log-install.txt
-echo "OpenSSH  : 22, 143"  | tee -a log-install.txt
-echo "Dropbear : 80, 444"  | tee -a log-install.txt
-echo "SSL      : 443"  | tee -a log-install.txt
-echo "Squid3   : 8080, 3128 (limit to IP SSH)"  | tee -a log-install.txt
-echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
-echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
-echo "nginx    : 81"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Script"  | tee -a log-install.txt
-echo "------"  | tee -a log-install.txt
-echo "menu         (Menampilkan daftar perintah yang tersedia)"  | tee -a log-install.txt
-echo "user-add     (Membuat Akaun SSH)"  | tee -a log-install.txt
-echo "trial        (Membuat Akaun Trial)"  | tee -a log-install.txt
-echo "user-del     (Menghapus Akaun SSH)"  | tee -a log-install.txt
-echo "user-login   (Cek User Login)"  | tee -a log-install.txt
-echo "user-list    (Cek Member SSH)"  | tee -a log-install.txt
-echo "expdel       (Delete User expired)"  | tee -a log-install.txt
-echo "resvis       (Restart Service Dropbear, Webmin, Squid3, OpenVPN dan SSH)"  | tee -a log-install.txt
-echo "reboot       (Reboot VPS)"  | tee -a log-install.txt
-echo "speedtest    (Speedtest VPS)"  | tee -a log-install.txt
-echo "info         (Menampilkan Informasi Sistem)"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Fitur lain"  | tee -a log-install.txt
-echo "----------"  | tee -a log-install.txt
-echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
-echo "IPv6     : [off]"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Thanks To"  | tee -a log-install.txt
-echo "---------"  | tee -a log-install.txt
-echo "Allah"  | tee -a log-install.txt
-echo "Admin And All Member KPN Family"  | tee -a log-install.txt
-echo "Google"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Goup"  | tee -a log-install.txt
-echo "----"  | tee -a log-install.txt
-echo "CPM/OOCPM"  | tee -a log-install.txt
-echo "KPN IMO"  | tee -a log-install.txt
-echo "K.A.G"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "VPS AUTO REBOOT SETIAP JAM 00.00 WIB"  | tee -a log-install.txt
-echo "Log Installation --> /root/log-install.txt"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "==========================================="  | tee -a log-install.txt
+cd
+figlet MSC VIP PERU
+figlet configurado
+menu
+trial
+escho
+
+
 cd
 rm -f /root/debian.sh
