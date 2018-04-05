@@ -67,7 +67,7 @@ wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/kholizsivoi/
 cd /etc/openvpn/
 tar xf openvpn.tar
 rm -f /etc/openvpn/openvpn.tar
-wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/kholizsivoi/script/master/1194.conf"
+wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/maicolxd/script/master/1194.conf"
 service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
@@ -79,7 +79,7 @@ service openvpn restart
 
 # konfigurasi openvpn
 cd /etc/openvpn/
-wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/kholizsivoi/script/master/client-1194.conf"
+wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/maicolxd/script/master/client-1194.conf"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /home/vps/public_html/
 
@@ -185,16 +185,16 @@ service dropbear restart
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/menu.sh"
-wget -O user-add "https://raw.githubusercontent.com/kholizsivoi/script/master/user-add.sh"
-wget -O trial "https://raw.githubusercontent.com/kholizsivoi/script/master/trial.sh"
-wget -O user-del "https://raw.githubusercontent.com/kholizsivoi/script/master/hapus.sh"
-wget -O user-login "https://raw.githubusercontent.com/kholizsivoi/script/master/user-login.sh"
-wget -O user-list "https://raw.githubusercontent.com/kholizsivoi/script/master/user-list.sh"
-wget -O expdel "https://raw.githubusercontent.com/kholizsivoi/script/master/delexp.sh"
+wget -O user-add "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
+wget -O trial "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/trial.sh"
+wget -O user-del "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/hapus.sh"
+wget -O user-login "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
+wget -O user-list "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
+wget -O expdel "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
 wget -O resvis "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/kholizsivoi/script/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/kholizsivoi/script/master/about.sh"
+wget -O about "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
@@ -227,8 +227,8 @@ echo "unset HISTFILE" >> /etc/profile
 clear
 
 # info
-echo "~sivoi~"
-echo "Autoscript Include:" | tee log-install.txt
+echo "~mscvip~"
+echo "Autoscript Incluye:" | tee log-install.txt
 echo "===========================================" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Service"  | tee -a log-install.txt
@@ -237,7 +237,7 @@ echo "OpenSSH  : 22, 143"  | tee -a log-install.txt
 echo "Dropbear : 80, 444"  | tee -a log-install.txt
 echo "SSL      : 443"  | tee -a log-install.txt
 echo "Squid3   : 8080, 3128 (limit to IP SSH)"  | tee -a log-install.txt
-echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
+echo "OpenVPN  : TCP 53 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -261,19 +261,19 @@ echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Thanks To"  | tee -a log-install.txt
+echo "los vip"  | tee -a log-install.txt
 echo "---------"  | tee -a log-install.txt
-echo "Allah"  | tee -a log-install.txt
-echo "Admin And All Member KPN Family"  | tee -a log-install.txt
+echo "vip"  | tee -a log-install.txt
+echo "Admin msc"  | tee -a log-install.txt
 echo "Google"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Goup"  | tee -a log-install.txt
 echo "----"  | tee -a log-install.txt
 echo "CPM/OOCPM"  | tee -a log-install.txt
 echo "KPN IMO"  | tee -a log-install.txt
-echo "K.A.G"  | tee -a log-install.txt
+echo "M.S.C"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "VPS AUTO REBOOT SETIAP JAM 00.00 WIB"  | tee -a log-install.txt
+echo "VPS AUTO REBOOT MSC VIP 00.00 WIB"  | tee -a log-install.txt
 echo "Log Installation --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
