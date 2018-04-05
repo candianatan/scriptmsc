@@ -176,7 +176,7 @@ rm -rf /root/ddos-deflate-master.zip
 
 # setting banner
 rm /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/kholizsivoi/script/master/issue.net"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/issue.net"
 sed -i 's@#Banner@Banner@g' /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 service ssh restart
@@ -185,16 +185,16 @@ service dropbear restart
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/menu.sh"
-wget -O user-add "https://raw.githubusercontent.com/kholizsivoi/script/master/user-add.sh"
-wget -O trial "https://raw.githubusercontent.com/kholizsivoi/script/master/trial.sh"
-wget -O user-del "https://raw.githubusercontent.com/kholizsivoi/script/master/hapus.sh"
-wget -O user-login "https://raw.githubusercontent.com/kholizsivoi/script/master/user-login.sh"
-wget -O user-list "https://raw.githubusercontent.com/kholizsivoi/script/master/user-list.sh"
-wget -O expdel "https://raw.githubusercontent.com/kholizsivoi/script/master/delexp.sh"
+wget -O user-add "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
+wget -O trial "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/trial.sh"
+wget -O user-del "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/hapus.sh"
+wget -O user-login "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
+wget -O user-list "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
+wget -O expdel "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
 wget -O resvis "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/kholizsivoi/script/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/kholizsivoi/script/master/about.sh"
+wget -O about "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
@@ -243,17 +243,17 @@ echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
-echo "menu         (Menampilkan daftar perintah yang tersedia)"  | tee -a log-install.txt
-echo "user-add     (Membuat Akaun SSH)"  | tee -a log-install.txt
-echo "trial        (Membuat Akaun Trial)"  | tee -a log-install.txt
-echo "user-del     (Menghapus Akaun SSH)"  | tee -a log-install.txt
-echo "user-login   (Cek User Login)"  | tee -a log-install.txt
-echo "user-list    (Cek Member SSH)"  | tee -a log-install.txt
-echo "expdel       (Delete User expired)"  | tee -a log-install.txt
-echo "resvis       (Restart Service Dropbear, Webmin, Squid3, OpenVPN dan SSH)"  | tee -a log-install.txt
-echo "reboot       (Reboot VPS)"  | tee -a log-install.txt
+echo "menu         (Muestra una lista de comandos disponibles"  | tee -a log-install.txt
+echo "user-add     (crear usuarios SSH)"  | tee -a log-install.txt
+echo "trial        (cuenta Trial)"  | tee -a log-install.txt
+echo "user-del     (eliminar SSH)"  | tee -a log-install.txt
+echo "user-login   (User online)"  | tee -a log-install.txt
+echo "user-list    (lista de usuarios SSH)"  | tee -a log-install.txt
+echo "expdel       (eliminar User expirados)"  | tee -a log-install.txt
+echo "resvis       (Reiniciar Servicio Dropbear, Webmin, Squid3, OpenVPN dan SSH)"  | tee -a log-install.txt
+echo "reboot       (Reiniciar VPS)"  | tee -a log-install.txt
 echo "speedtest    (Speedtest VPS)"  | tee -a log-install.txt
-echo "info         (Menampilkan Informasi Sistem)"  | tee -a log-install.txt
+echo "info         (informacion del sistema)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Fitur lain"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
@@ -263,8 +263,8 @@ echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Thanks To"  | tee -a log-install.txt
 echo "---------"  | tee -a log-install.txt
-echo "Allah"  | tee -a log-install.txt
-echo "Admin And All Member KPN Family"  | tee -a log-install.txt
+echo "MSC"  | tee -a log-install.txt
+echo "Admin MSC PERU"  | tee -a log-install.txt
 echo "Google"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Goup"  | tee -a log-install.txt
