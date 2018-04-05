@@ -243,17 +243,17 @@ echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
-echo "menu         (Muestra una lista de comandos disponibles"  | tee -a log-install.txt
-echo "user-add     (crear usuarios SSH)"  | tee -a log-install.txt
-echo "trial        (cuenta Trial)"  | tee -a log-install.txt
-echo "user-del     (eliminar SSH)"  | tee -a log-install.txt
-echo "user-login   (User online)"  | tee -a log-install.txt
-echo "user-list    (lista de usuarios SSH)"  | tee -a log-install.txt
-echo "expdel       (eliminar User expirados)"  | tee -a log-install.txt
-echo "resvis       (Reiniciar Servicio Dropbear, Webmin, Squid3, OpenVPN dan SSH)"  | tee -a log-install.txt
-echo "reboot       (Reiniciar VPS)"  | tee -a log-install.txt
+echo "menu         (Menampilkan daftar perintah yang tersedia)"  | tee -a log-install.txt
+echo "user-add     (Membuat Akaun SSH)"  | tee -a log-install.txt
+echo "trial        (Membuat Akaun Trial)"  | tee -a log-install.txt
+echo "user-del     (Menghapus Akaun SSH)"  | tee -a log-install.txt
+echo "user-login   (Cek User Login)"  | tee -a log-install.txt
+echo "user-list    (Cek Member SSH)"  | tee -a log-install.txt
+echo "expdel       (Delete User expired)"  | tee -a log-install.txt
+echo "resvis       (Restart Service Dropbear, Webmin, Squid3, OpenVPN dan SSH)"  | tee -a log-install.txt
+echo "reboot       (Reboot VPS)"  | tee -a log-install.txt
 echo "speedtest    (Speedtest VPS)"  | tee -a log-install.txt
-echo "info         (informacion del sistema)"  | tee -a log-install.txt
+echo "info         (Menampilkan Informasi Sistem)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Fitur lain"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
@@ -263,8 +263,8 @@ echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Thanks To"  | tee -a log-install.txt
 echo "---------"  | tee -a log-install.txt
-echo "MSC"  | tee -a log-install.txt
-echo "Admin MSC PERU"  | tee -a log-install.txt
+echo "Allah"  | tee -a log-install.txt
+echo "Admin And All Member KPN Family"  | tee -a log-install.txt
 echo "Google"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Goup"  | tee -a log-install.txt
