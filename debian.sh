@@ -234,7 +234,3 @@ figlet configurado
 menu
 trial
 escho
-
-
-cd
-rm -f /root/debian.sh
