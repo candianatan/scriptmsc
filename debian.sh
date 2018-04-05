@@ -228,7 +228,7 @@ clear
 
 # info
 echo "~mscvip~"
-echo "Autoscript Incluye:" | tee log-install.txt
+echo "Autoscript Include:" | tee log-install.txt
 echo "===========================================" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Service"  | tee -a log-install.txt
@@ -237,7 +237,7 @@ echo "OpenSSH  : 22, 143"  | tee -a log-install.txt
 echo "Dropbear : 80, 444"  | tee -a log-install.txt
 echo "SSL      : 443"  | tee -a log-install.txt
 echo "Squid3   : 8080, 3128 (limit to IP SSH)"  | tee -a log-install.txt
-echo "OpenVPN  : TCP 53 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
+echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -261,19 +261,19 @@ echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "los vip"  | tee -a log-install.txt
+echo "Thanks To"  | tee -a log-install.txt
 echo "---------"  | tee -a log-install.txt
-echo "vip"  | tee -a log-install.txt
-echo "Admin msc"  | tee -a log-install.txt
+echo "Allah"  | tee -a log-install.txt
+echo "Admin And All Member KPN Family"  | tee -a log-install.txt
 echo "Google"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Goup"  | tee -a log-install.txt
 echo "----"  | tee -a log-install.txt
 echo "CPM/OOCPM"  | tee -a log-install.txt
 echo "KPN IMO"  | tee -a log-install.txt
-echo "M.S.C"  | tee -a log-install.txt
+echo "K.A.G"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "VPS AUTO REBOOT MSC VIP 00.00 WIB"  | tee -a log-install.txt
+echo "VPS AUTO REBOOT SETIAP JAM 00.00 WIB"  | tee -a log-install.txt
 echo "Log Installation --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
