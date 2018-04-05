@@ -192,7 +192,7 @@ wget -O user-del "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-
 wget -O user-login "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
 wget -O user-list "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
 wget -O expdel "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
-wget -O resvis "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
+wget -O reiniciar "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/kholizsivoi/script/master/info.sh"
 wget -O about "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
@@ -205,7 +205,7 @@ chmod +x trial
 chmod +x user-del
 chmod +x user-login
 chmod +x user-list
-chmod +x resvis
+chmod +x reiniciar
 chmod +x speedtest
 chmod +x info
 chmod +x expdel
@@ -230,7 +230,9 @@ clear
 # info
 cd
 figlet MSC VIP PERU
-figlet configurado
+figlet TU VPS 
+figlet FUE 
+figlet CONFIGURADO
 menu
 trial
 escho
