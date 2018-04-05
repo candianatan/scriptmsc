@@ -185,16 +185,16 @@ service dropbear restart
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/menu.sh"
-wget -O user-add "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
-wget -O trial "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/trial.sh"
-wget -O user-del "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/hapus.sh"
-wget -O user-login "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
-wget -O user-list "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
-wget -O expdel "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
+wget -O user-add "https://raw.githubusercontent.com/kholizsivoi/script/master/user-add.sh"
+wget -O trial "https://raw.githubusercontent.com/kholizsivoi/script/master/trial.sh"
+wget -O user-del "https://raw.githubusercontent.com/kholizsivoi/script/master/hapus.sh"
+wget -O user-login "https://raw.githubusercontent.com/kholizsivoi/script/master/user-login.sh"
+wget -O user-list "https://raw.githubusercontent.com/kholizsivoi/script/master/user-list.sh"
+wget -O expdel "https://raw.githubusercontent.com/kholizsivoi/script/master/delexp.sh"
 wget -O resvis "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/kholizsivoi/script/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
+wget -O about "https://raw.githubusercontent.com/kholizsivoi/script/master/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
