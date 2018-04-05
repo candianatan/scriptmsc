@@ -229,10 +229,10 @@ clear
 
 # info
 cd
+info
 figlet MSC VIP PERU
 figlet TU VPS 
 figlet FUE 
 figlet CONFIGURADO
 menu
 trial
-escho
