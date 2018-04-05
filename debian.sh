@@ -186,7 +186,7 @@ service dropbear restart
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/menu.sh"
-wget -O user-add "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
+wget -O crear "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
 wget -O trial "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/trial.sh"
 wget -O user-del "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/hapus.sh"
 wget -O user-login "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
@@ -200,7 +200,7 @@ wget -O about "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/a
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x menu
-chmod +x user-add
+chmod +x crear
 chmod +x trial
 chmod +x user-del
 chmod +x user-login
@@ -229,10 +229,9 @@ clear
 
 # info
 cd
-info
 figlet MSC VIP PERU
 figlet TU VPS 
 figlet FUE 
 figlet CONFIGURADO
+about
 menu
-trial
