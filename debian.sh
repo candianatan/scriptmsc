@@ -184,10 +184,11 @@ wget -O eliminar "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-
 wget -O online "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
 wget -O lista "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
 wget -O expirados "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
-wget -O reiniciar "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
+wget -O reiniciar "https://raw.githubusercontent.com/maicolxd/script/master/reiniciar.sh"
 wget -O velocidad "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/info.sh"
 wget -O mas "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
+wget -O salir "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/salír.sh" 
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
@@ -202,6 +203,7 @@ chmod +x velocidad
 chmod +x info
 chmod +x expirados
 chmod +x mas
+chmod +x salir
 
 # finishing
 cd
@@ -211,7 +213,6 @@ service openvpn restart
 service cron restart
 service ssh restart
 service dropbear restart
-service stunnel4 restart
 service squid3 restart
 service fail2ban restart
 service webmin restart
@@ -226,4 +227,4 @@ figlet TU VPS
 figlet FUE 
 figlet CONFIGURADO
 sleep 3s
-exit
+salir
