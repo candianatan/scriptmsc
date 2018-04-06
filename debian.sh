@@ -36,6 +36,7 @@ apt-get update
 # install webserver
 apt-get -y install nginx
 apt-get install figlet -y
+apt-get install bmon
 
 # install essential package
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
@@ -103,8 +104,8 @@ service ssh restart
 # install dropbear
 apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=444/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 444 -p 80"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 443 -p 80"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 service ssh restart
@@ -184,7 +185,7 @@ wget -O online "https://raw.githubusercontent.com/maicolxd/script-vps-/master/us
 wget -O lista "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
 wget -O expirados "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
 wget -O reiniciar "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
-wget -O speedtest "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
+wget -O velocidad "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/info.sh"
 wget -O mas "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
 
@@ -197,7 +198,7 @@ chmod +x eliminar
 chmod +x online
 chmod +x lista
 chmod +x reiniciar
-chmod +x speedtest
+chmod +x velocidad
 chmod +x info
 chmod +x expirados
 chmod +x mas
