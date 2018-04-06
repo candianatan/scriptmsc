@@ -44,7 +44,6 @@ echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/
 curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
 apt-get update
 apt-get install neofetch
-apt-get install figlet -y
 
 echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/sources.list
 curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
@@ -220,6 +219,7 @@ clear
 
 # info
 cd
+apt-get install figlet -y
 figlet MSC VIP PERU
 figlet TU VPS 
 figlet FUE 
