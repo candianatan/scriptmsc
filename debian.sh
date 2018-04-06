@@ -225,5 +225,5 @@ figlet MSC VIP PERU
 figlet TU VPS 
 figlet FUE 
 figlet CONFIGURADO
-mas
-menu
+sleep 3s
+exit
