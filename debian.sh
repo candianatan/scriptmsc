@@ -35,6 +35,7 @@ apt-get update
 
 # install webserver
 apt-get -y install nginx
+apt-get install figlet -y
 
 # install essential package
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
@@ -176,30 +177,30 @@ service dropbear restart
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/menu.sh"
-wget -O user-add "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
-wget -O trial "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/trial.sh"
-wget -O user-del "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/hapus.sh"
-wget -O user-login "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
-wget -O user-list "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
-wget -O expdel "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
-wget -O resvis "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
+wget -O crear "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
+wget -O prueva "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/trial.sh"
+wget -O eliminar "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/hapus.sh"
+wget -O online "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
+wget -O lista "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
+wget -O expirados "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
+wget -O reiniciar "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/info.sh"
-wget -O about "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
+wget -O mas "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x menu
-chmod +x user-add
-chmod +x trial
-chmod +x user-del
-chmod +x user-login
-chmod +x user-list
-chmod +x resvis
+chmod +x crear
+chmod +x prueva
+chmod +x eliminar
+chmod +x online
+chmod +x lista
+chmod +x reiniciar
 chmod +x speedtest
 chmod +x info
-chmod +x expdel
-chmod +x about
+chmod +x expirados
+chmod +x mas
 
 # finishing
 cd
@@ -219,10 +220,9 @@ clear
 
 # info
 cd
-apt-get install figlet -y
 figlet MSC VIP PERU
 figlet TU VPS 
 figlet FUE 
 figlet CONFIGURADO
-about
+mas
 menu
