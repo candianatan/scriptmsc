@@ -194,7 +194,7 @@ wget -O user-list "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip
 wget -O expdel "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/delexp.sh"
 wget -O resvis "https://raw.githubusercontent.com/kholizsivoi/script/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/kholizsivoi/script/master/info.sh"
+wget -O info "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/info.sh"
 wget -O about "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
