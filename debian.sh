@@ -110,6 +110,19 @@ echo "/usr/sbin/nologin" >> /etc/shells
 service ssh restart
 service dropbear restart
 
+# install dropbear 2017
+cd
+wget https://raw.githubusercontent.com/kholizsivoi/script/master/dropbear-2017.75.tar.bz2
+apt-get install zlib1g-dev
+bzip2 -cd dropbear-2017.75.tar.bz2  | tar xvf -
+cd dropbear-2017.75
+./configure
+make && make install
+mv /usr/sbin/dropbear /usr/sbin/dropbear1
+ln /usr/local/sbin/dropbear /usr/sbin/dropbear
+service dropbear restart
+rm -f /root/dropbear-2017.75.tar.bz2
+
 # install stunnel4
 apt-get -y install stunnel4
 wget -O /etc/stunnel/stunnel.pem "https://raw.githubusercontent.com/kholizsivoi/stunnel4/master/stunnel.pem"
