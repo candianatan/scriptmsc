@@ -166,15 +166,6 @@ iptables -A FORWARD -m string --algo bm --string "torrent" -j DROP
 iptables -A FORWARD -m string --algo bm --string "announce" -j DROP
 iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
 
-# install ddos deflate
-cd
-apt-get -y install dnsutils dsniff
-wget https://raw.githubusercontent.com/kholizsivoi/script/master/ddos-deflate-master.zip
-unzip ddos-deflate-master.zip
-cd ddos-deflate-master
-./install.sh
-rm -rf /root/ddos-deflate-master.zip
-
 # setting banner
 rm /etc/issue.net
 wget -O /etc/issue.net "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/issue.net"
