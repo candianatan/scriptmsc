@@ -36,7 +36,6 @@ apt-get update
 # install webserver
 apt-get -y install nginx
 apt-get install figlet -y
-apt-get install bmon
 
 # install essential package
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
@@ -188,7 +187,6 @@ wget -O reiniciar "https://raw.githubusercontent.com/maicolxd/script/master/rein
 wget -O velocidad "https://raw.githubusercontent.com/kholizsivoi/script/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/info.sh"
 wget -O mas "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
-wget -O salir "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/salír.sh" 
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
@@ -203,7 +201,6 @@ chmod +x velocidad
 chmod +x info
 chmod +x expirados
 chmod +x mas
-chmod +x salir
 
 # finishing
 cd
@@ -213,6 +210,7 @@ service openvpn restart
 service cron restart
 service ssh restart
 service dropbear restart
+service stunnel4 restart
 service squid3 restart
 service fail2ban restart
 service webmin restart
@@ -226,5 +224,4 @@ figlet MSC VIP PERU
 figlet TU VPS 
 figlet FUE 
 figlet CONFIGURADO
-sleep 3s
-salir
+menu
