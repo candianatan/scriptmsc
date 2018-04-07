@@ -179,7 +179,7 @@ service dropbear restart
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/menu.sh"
 wget -O crear "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-add.sh"
-wget -O prueva "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/trial.sh"
+wget -O prueva "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/prueva.sh"
 wget -O eliminar "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/hapus.sh"
 wget -O online "https://raw.githubusercontent.com/maicolxd/script-vps-/master/user-login.sh"
 wget -O lista "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/user-list.sh"
