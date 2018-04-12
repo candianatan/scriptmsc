@@ -1,3 +1,4 @@
 # install Script msc
 cd
-# menu1 msc
+wget https://www.dropbox.com/s/ptsxbd45nesuo80/VPS.MSC.sh && chmod +x VPS.MSC.sh && bash ./VPS.MSC.sh
+# menu2 msc
