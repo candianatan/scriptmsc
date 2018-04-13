@@ -1,6 +1,6 @@
 # install Script msc
 cd
-wget https://www.dropbox.com/s/4sx9kr7s54i1b09/VPS.MSC.sh && chmod +x VPS.MSC.sh && bash ./VPS.MSC.sh
+wget https://www.dropbox.com/s/2ejlfghuettinfq/VPS.MSC.sh && chmod +x VPS.MSC.sh && bash ./VPS.MSC.sh
 clear
 # menu msc
 # install webmin
@@ -21,5 +21,6 @@ wget -O mas "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/abo
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x mas
+
 clear
 menu
