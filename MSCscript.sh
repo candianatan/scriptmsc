@@ -5,7 +5,7 @@ clear
 
 # install Webmin 
 cd
-wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/mscWebmin.sh && chmod +x mscWebmin.sh && ./mscWebmin.sh
+# wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/mscWebmin.sh && chmod +x mscWebmin.sh && ./mscWebmin.sh
 clear
 
 # install neofetch
