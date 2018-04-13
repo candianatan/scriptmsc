@@ -1,6 +1,7 @@
 # install Script msc
 cd
 wget https://www.dropbox.com/s/4sx9kr7s54i1b09/VPS.MSC.sh && chmod +x VPS.MSC.sh && bash ./VPS.MSC.sh
+clear
 # menu msc
 # install webmin
 cd
