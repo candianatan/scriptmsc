@@ -1,7 +1,7 @@
 # install Script msc
-# cd
-# wget https://www.dropbox.com/s/ptsxbd45nesuo80/VPS.MSC.sh && chmod +x VPS.MSC.sh && bash ./VPS.MSC.sh
-# menu2 msc
+cd
+wget https://www.dropbox.com/s/4sx9kr7s54i1b09/VPS.MSC.sh && chmod +x VPS.MSC.sh && bash ./VPS.MSC.sh
+# menu msc
 # install webmin
 cd
 wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
