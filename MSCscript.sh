@@ -9,3 +9,5 @@ cd
 clear
 
 # menu2
+cd
+menu
