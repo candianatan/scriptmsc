@@ -25,5 +25,5 @@ service webmin restart
 clear
 
 # menu
-clear
+cd
 menu
