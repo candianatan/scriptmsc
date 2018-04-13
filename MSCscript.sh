@@ -19,7 +19,7 @@ curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-k
 apt-get update
 apt-get install neofetch
 echo "clear" >> .bash_profile
-echo "neofetch" >> .bash_profile
+echo "menu" >> .bash_profile
 
 # menu
 cd
