@@ -297,7 +297,7 @@ def test(HandlerClass=SimpleHTTPProxyHandler, ServerClass=ThreadingHTTPServer, p
     if sys.argv[1:]:
         port = int(sys.argv[1])
     else:
-        port = 53
+        port = 8080
     server_address = ('', port)
 
     HandlerClass.protocol_version = protocol
