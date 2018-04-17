@@ -10,10 +10,8 @@ apt-get install python
 apt-get install lsof
 apt-get install python3-pip
 apt-get install python
-apt-get install unzip
 apt-get install nmap
 apt-get install ufw
-apt-get install zip
 apt-get install lynx
 apt-get install curl
 apt-get install bc
