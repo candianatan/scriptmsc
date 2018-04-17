@@ -1,4 +1,4 @@
- #!/usr/bin/env python
+#!/usr/bin/env python
 
 import sys
 import httplib
@@ -13,6 +13,11 @@ import gzip
 import zlib
 import re
 import traceback
+
+if sys.argv[2:]:
+ msg1 = sys.argv[2]
+else:
+ msg1 = '<font color="blue">AQUI</font> <font color="blue">MSC PERU REPORTANDOSE</font>'
 
 
 class ThreadingHTTPServer(ThreadingMixIn, HTTPServer):
@@ -61,11 +66,11 @@ class SimpleHTTPProxyHandler(BaseHTTPRequestHandler):
             conn = socket.create_connection(address)
         except socket.error:
             return
-        self.send_response(200, '<font color="blue">AQUÍ</font> <font color="blue">MSC PERU REPORTÁNDOSE</font>')
+        self.send_response(200, msg1)
         self.send_header('Connection', 'close')
         self.end_headers()
 
-        conns = [self.connection, conn]
+        conns = [self.connection, conn] 
         keep_connection = True
         while keep_connection:
             keep_connection = False
@@ -297,7 +302,7 @@ def test(HandlerClass=SimpleHTTPProxyHandler, ServerClass=ThreadingHTTPServer, p
     if sys.argv[1:]:
         port = int(sys.argv[1])
     else:
-        port = 8799
+        port = 53
     server_address = ('', port)
 
     HandlerClass.protocol_version = protocol
