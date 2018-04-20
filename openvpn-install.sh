@@ -119,7 +119,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			;;
 			3) 
 			echo ""
-			read -p "Do you really want to remove OpenVPN? [y/n]: " -e -i n REMOVE
+			read -p "¿De verdad quieres eliminar OpenVPN? [y/n]: " -e -i n REMOVE
 			if [[ "$REMOVE" = 'y' ]]; then
 				PORT=$(grep '^port ' /etc/openvpn/server.conf | cut -d " " -f 2)
 				PROTOCOL=$(grep '^proto ' /etc/openvpn/server.conf | cut -d " " -f 2)
@@ -159,10 +159,10 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 				fi
 				rm -rf /etc/openvpn
 				echo ""
-				echo "OpenVPN removed!"
+				echo "OpenVPN Eliminado!"
 			else
 				echo ""
-				echo "Removal aborted!"
+				echo "La eliminación abortó!"
 			fi
 			exit
 			;;
@@ -171,14 +171,14 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo 'Welcome to this quick OpenVPN "road warrior" installer'
+	echo 'Bienvenido a este rápido instalador de OpenVPN "MSC PERU"'
 	echo ""
 	# OpenVPN setup and first user creation
-	echo "I need to ask you a few questions before starting the setup"
-	echo "You can leave the default options and just press enter if you are ok with them"
+	echo "Necesito hacerte algunas preguntas antes de comenzar la configuración"
+	echo "Puedes dejar las opciones predeterminadas y solo presionar Enter si estás de acuerdo con ellas"
 	echo ""
-	echo "First I need to know the IPv4 address of the network interface you want OpenVPN"
-	echo "listening to."
+	echo "Primero necesito saber la dirección IPv4 de la interfaz de red que quiere OpenVPN"
+	echo "listo para iniciar la instalación."
 	# Autodetect IP address and pre-fill for the user
 	IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 	read -p "IP address: " -e -i $IP IP
