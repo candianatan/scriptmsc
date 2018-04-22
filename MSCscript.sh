@@ -6,8 +6,11 @@ clear
 # install complementos
 cd
 wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/mscWebmin.sh && chmod +x mscWebmin.sh && ./mscWebmin.sh
-apt-get install screen
-clear
+apt-get install screen -y
+
+# star proxy python
+cd
+screen python proxy2.py &
 
 # menu
 cd
