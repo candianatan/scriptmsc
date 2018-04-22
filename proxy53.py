@@ -17,7 +17,7 @@ import traceback
 if sys.argv[2:]:
  msg1 = sys.argv[2]
 else:
- msg1 = "ADM-ULTIMATE"
+ msg1 = "<font color="blue">AQUI</font> <font color="blue">MSC PERU REPORTANDOSE</font>"
 
 
 class ThreadingHTTPServer(ThreadingMixIn, HTTPServer):
@@ -309,7 +309,7 @@ def test(HandlerClass=SimpleHTTPProxyHandler, ServerClass=ThreadingHTTPServer, p
     httpd = ServerClass(server_address, HandlerClass)
 
     sa = httpd.socket.getsockname()
-    print "Serving HTTP on", sa[0], "port", sa[1], "..."
+    print "Servicio HTTP proxy on", sa[0], "port", sa[1], "..."
     httpd.serve_forever()
 
 
