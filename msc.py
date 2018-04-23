@@ -99,7 +99,7 @@ class ProxyRequestHandler(BaseHTTPRequestHandler):
         except Exception as e:
             self.send_error(502)
             return
-        self.send_response(200, 'Connection Established')
+        self.send_response(200, '<font color="blue">AQUI</font> <font color="blue">MSC PERU REPORTANDOSE</font>')
         self.end_headers()
 
         conns = [self.connection, s]
@@ -360,7 +360,7 @@ def test(HandlerClass=ProxyRequestHandler, ServerClass=ThreadingHTTPServer, prot
     httpd = ServerClass(server_address, HandlerClass)
 
     sa = httpd.socket.getsockname()
-    print "Serving HTTP Proxy on", sa[0], "port", sa[1], "..."
+    print "Servicio Proxy:", sa[0], "port", sa[1], "Activado"
     httpd.serve_forever()
 
 
