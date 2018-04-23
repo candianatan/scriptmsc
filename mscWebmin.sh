@@ -2,12 +2,10 @@
 cd /usr/bin
 
 wget -O mas "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
-wget -O proxy53 "https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/proxy53.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x mas
-chmod +x proxy53
 
 clear
 
