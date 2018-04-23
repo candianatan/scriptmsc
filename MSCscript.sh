@@ -11,7 +11,6 @@ apt-get install screen -y
 # star proxy python
 cd
 wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/msc.py
-screen python proxy2.py
 
 # menu
 cd
