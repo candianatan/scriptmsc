@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenVPN road warrior installer for Debian, Ubuntu and CentOS
+# OpenVPN MSC installer for Debian, Ubuntu and CentOS
 
 # This script will work on Debian, Ubuntu, CentOS and probably other distros
 # of the same families, although no support is offered for them. It isn't
@@ -63,7 +63,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	while :
 	do
 	clear
-		echo "Parece que OpenVPN ya está instalado"
+		echo "MENÚ OpenVPN ya está instalado"
 		echo ""
 		echo "¿Qué quieres hacer?"
 		echo "   1) Agregar un nuevo usuario"
