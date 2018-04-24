@@ -164,9 +164,9 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 				echo ""
 				echo "La eliminación abortó!"
 			fi
-			menu
+			exit
 			;;
-			4) menu;;
+			4) exit;;
 		esac
 	done
 else
