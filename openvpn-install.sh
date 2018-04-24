@@ -69,7 +69,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 		echo "   1) Agregar un nuevo usuario"
 		echo "   2) Eliminar un usuario existente"
 		echo "   3) Desintalar OpenVPN"
-		echo "   4) Salir"
+		echo "   4) Volver al menú principal"
 		read -p "Seleccione una opcion [1-4]: " option
 		case $option in
 			1) 
@@ -164,9 +164,9 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 				echo ""
 				echo "La eliminación abortó!"
 			fi
-			exit
+			menu
 			;;
-			4) exit;;
+			4) menu;;
 		esac
 	done
 else
