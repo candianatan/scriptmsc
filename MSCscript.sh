@@ -50,4 +50,5 @@ wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/msc.py
 
 # menu
 cd
+echo "menu" >> .bash_profile
 menu
