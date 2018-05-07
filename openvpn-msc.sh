@@ -82,8 +82,8 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			# Generates the custom client.ovpn
 			newclient "$CLIENT"
 			echo ""
-			echo "Cliente $CLIENT,la configuración para descargar"
-			echo "de su cliente " http://IPdeVPS/root/"$CLIENT.ovpn"
+			echo "Cliente $CLIENT,la configuración se encuentra en "
+			echo "la carpeta de la vps" root/"$CLIENT.ovpn"
 			exit
 			;;
 			2)
@@ -414,8 +414,8 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo ""
 	echo "Terminado!"
 	echo ""
-	echo "para descargar la configuración" 
-        echo "de su cliente " http://$IP/root/"$CLIENT.ovpn"
+	echo "la configuración" 
+        echo "de su cliente esta la carpeta vps" root/"$CLIENT.ovpn"
 	echo "Si desea agregar más clientes ¡simplemente vuelve al menu!"
 	echo ""
 	
