@@ -82,7 +82,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			# Generates the custom client.ovpn
 			newclient "$CLIENT"
 			echo ""
-			echo "Cliente $CLIENT , y la configuración está disponible en" ~/"$CLIENT.ovpn"
+			echo "Cliente $CLIENT,la configuración para descargar esta en"http://$IP/~/"$CLIENT.ovpn"
 			exit
 			;;
 			2)
@@ -174,10 +174,9 @@ else
 	echo 'Bienvenido a este rápido instalador de OpenVPN "MSC PERU"'
 	echo ""
 	# OpenVPN setup and first user creation
-	echo "Necesito hacerte algunas preguntas antes de comenzar la configuración"
 	echo "Puedes dejar las opciones predeterminadas y solo presionar Enter si estás de acuerdo con ellas"
 	echo ""
-	echo "Primero necesito saber la dirección IPv4 de la interfaz de red que quiere OpenVPN"
+	echo "Primero necesito saber la dirección IPv4 de la interfaz de red vps"
 	echo "listo para iniciar la instalación."
 	# Autodetect IP address and pre-fill for the user
 	IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
@@ -411,6 +410,6 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo ""
 	echo "Terminado!"
 	echo ""
-	echo "La configuración de su cliente está disponible en" ~/"$CLIENT.ovpn"
+	echo "url para descargar la configuración de su cliente " http://$IP/~/"$CLIENT.ovpn"
 	echo "Si desea agregar más clientes, ¡simplemente vuelve al menu!"
 fi
