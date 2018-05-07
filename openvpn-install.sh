@@ -83,7 +83,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			newclient "$CLIENT"
 			echo ""
 			echo "Cliente $CLIENT,la configuración para descargar"
-			echo "de su cliente " http://$IP/root/"$CLIENT.ovpn"
+			echo "de su cliente " http://IPdeVPS/root/"$CLIENT.ovpn"
 			exit
 			;;
 			2)
