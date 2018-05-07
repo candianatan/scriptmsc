@@ -82,7 +82,8 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			# Generates the custom client.ovpn
 			newclient "$CLIENT"
 			echo ""
-			echo "Cliente $CLIENT,la configuración para descargar esta en"http://$IP/~/"$CLIENT.ovpn"
+			echo "Cliente $CLIENT,la configuración para descargar"
+			echo "esta en "http://$IP/root/"$CLIENT.ovpn"
 			exit
 			;;
 			2)
@@ -115,6 +116,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			chown nobody:$GROUPNAME /etc/openvpn/crl.pem
 			echo ""
 			echo "Certificate del client $CLIENT eliminado"
+			echo ""
 			exit
 			;;
 			3) 
@@ -412,6 +414,9 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo ""
 	echo "Terminado!"
 	echo ""
-	echo "url para descargar la configuración de su cliente " http://$IP/root/"$CLIENT.ovpn"
+	echo "para descargar la configuración" 
+        echo "de su cliente " http://$IP/root/"$CLIENT.ovpn"
 	echo "Si desea agregar más clientes ¡simplemente vuelve al menu!"
+	echo ""
+	
 fi
