@@ -171,8 +171,8 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo 'Bienvenido a este rápido instalador de OpenVPN "MSC PERU"
-        echo 'los archivos ovpn son autologin"
+	echo 'Bienvenido a este rápido instalador de OpenVPN "MSC PERU"' 
+	echo "los archivos ovpn son autologin"
 	echo ""
 	# OpenVPN setup and first user creation
 	echo "Puedes dejar las opciones predeterminadas"
