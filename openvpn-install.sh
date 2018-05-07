@@ -171,10 +171,12 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo 'Bienvenido a este rápido instalador de OpenVPN "MSC PERU"'
+	echo 'Bienvenido a este rápido instalador de OpenVPN "MSC PERU"
+        echo 'los archivos ovpn son autologin"
 	echo ""
 	# OpenVPN setup and first user creation
-	echo "Puedes dejar las opciones predeterminadas y solo presionar Enter si estás de acuerdo con ellas"
+	echo "Puedes dejar las opciones predeterminadas"
+        echo "y solo presionar Enter si estás de acuerdo con ellas" 
 	echo ""
 	echo "Primero necesito saber la dirección IPv4 de la interfaz de red vps"
 	echo "listo para iniciar la instalación."
@@ -410,6 +412,6 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo ""
 	echo "Terminado!"
 	echo ""
-	echo "url para descargar la configuración de su cliente " http://$IP/~/"$CLIENT.ovpn"
-	echo "Si desea agregar más clientes, ¡simplemente vuelve al menu!"
+	echo "url para descargar la configuración de su cliente " http://$IP/root/"$CLIENT.ovpn"
+	echo "Si desea agregar más clientes ¡simplemente vuelve al menu!"
 fi
