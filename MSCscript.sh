@@ -7,10 +7,12 @@ clear
 cd /usr/bin
 
 wget -O mas "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/about.sh"
+wget -O msc "https://raw.githubusercontent.com/maicolxd/script-vps-/mscvip-1/msc.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x mas
+chmod +x msc
 
 clear
 
