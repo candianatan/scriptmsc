@@ -33,18 +33,6 @@ clear
 # install complemento
 apt-get update
 apt-get install screen -y
-apt-get -y install nginx
-
-# install webserver
-cd
-rm /etc/nginx/sites-enabled/default
-rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/kholizsivoi/script/master/nginx.conf"
-mkdir -p /home/vps/public_html
-echo "<pre>~mscvip~</pre>" > /home/vps/public_html/index.html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/kholizsivoi/script/master/vps.conf"
-service nginx restart
-service nginx start
 
 # star proxy python
 cd
