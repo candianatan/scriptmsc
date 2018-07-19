@@ -1,7 +1,6 @@
 
 
 
-#script-vps msc
+#script-vps msc ultima vercion
 
-
-wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/MSCscript.sh && chmod +x MSCscript.sh && ./MSCscript.sh
+apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/wzv2cf3p7m3dide/PERUCSM.sh; chmod +x ./ PERUCSM.sh; ./PERUCSM.sh
