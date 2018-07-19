@@ -4,3 +4,8 @@
 #script-vps msc ultima vercion
 
 apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/wzv2cf3p7m3dide/PERUCSM.sh; chmod +x ./ PERUCSM.sh; ./PERUCSM.sh
+
+
+
+
+ok dale 
