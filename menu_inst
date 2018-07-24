@@ -284,7 +284,7 @@ fun_dropbear () {
  user -k 443/tcp > /dev/null 2>&1
  return 0
  }
-echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR DROPBEAR CSM-FREE")\n$barra"
+echo -e "$barra\n\033[1;32m "INSTALADOR DROPBEAR CSM-FREE")\n$barra"
 echo -e " $(source trans -b es:${id} "DROPBEAR USA EL PUERTO 443")\033[1;37m"
 echo -e "$barra"
    [[ $(mportas|grep 443) != "" ]] && {
@@ -1027,7 +1027,7 @@ rm ./get.py
  [[ "$(ps x | grep get.py | grep -v grep | awk '{print $1}')" != "" ]] && {
  echo -e "${barra}\n Gettunel $(source trans -b pt:${id} "Iniciado com Sucesso")\n${barra} "
  echo -e " Su password es:"
- echo -e "${cor[3]} Pass:\033[1;32m ADMMANAGER"
+ echo -e "${cor[3]} Pass:\033[1;32m MSCPERU"
  echo -e "$barra"
  touch /etc/adm-lite/gettun
  } || {
