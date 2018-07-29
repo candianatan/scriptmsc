@@ -29,7 +29,7 @@ rm $HOME/fim
 }
 instalar_fun () {
 cor[2]="\033[1;37m"
-text=$(source trans -b pt:${id} "Instalando")
+text= "Instalando")
 echo -e "${cor[2]} $text Curl"
 fun_bar 'apt-get install screen' 'apt-get install python'
 echo -e "${cor[2]} $text Nmap"
