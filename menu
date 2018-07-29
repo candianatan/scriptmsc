@@ -19,7 +19,8 @@ source ferramentas
 exit
 ;;
 3)
-fun_atualizar
+clear
+msc
 exit
 ;;
 4)
