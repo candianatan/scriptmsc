@@ -48,7 +48,7 @@ mv -f /etc/bash.bashrc-bakup /etc/bash.bashrc
 cat /etc/bash.bashrc | grep -v "/bin/adm" > /tmp/bash
 mv -f /tmp/bash /etc/bash.bashrc
 echo -e "${cor[1]} =================================== ${cor[0]}"
-echo -e "${cor[2]} \033[1;32mREMOVED SUCESS!"
+echo -e "${cor[2]} \033[1;32mEliminado con Exito!"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 elif [[ -e /etc/bash.bashrc ]]; then
 cat /etc/bash.bashrc|grep -v /bin/adm > /etc/bash.bashrc.2
@@ -56,7 +56,7 @@ echo '/bin/adm' >> /etc/bash.bashrc.2
 cp /etc/bash.bashrc /etc/bash.bashrc-bakup
 mv -f /etc/bash.bashrc.2 /etc/bash.bashrc
 echo -e "${cor[1]} =================================== ${cor[0]}"
-echo -e "${cor[2]} \033[1;32mAUTORUN START SUCESS!"
+echo -e "${cor[2]} \033[1;32mAUTORUN INICIADO!"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 fi
 sleep 2s
