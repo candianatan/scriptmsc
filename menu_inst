@@ -841,12 +841,12 @@ return 0
       unset Lport
       read -p " Listen Port: " Lport
       [[ $(mportas|grep "$Lport") = "" ]] && break
-      echo -e " ${Lport}: $(source trans -b pt:${id} "Porta Invalida")"      
+      echo -e " ${Lport}: Porta Invalida)"      
       done
 #INICIANDO
 echo -e "${barra}\n\033[1;33m "Digite una contraseña Shadowsocks")${cor[0]}"
 read -p" Pass: " Pass
-echo -e "${barra}\n\033[1;33m $(source trans -b pt:${id} "Instalando")\n${barra}${cor[0]}"
+echo -e "${barra}\n\033[1;33m Instalando)\n${barra}${cor[0]}"
 fun_bar 'apt-get install python-pip python-m2crypto -y'
 fun_bar 'pip install --upgrade pip'
 fun_bar 'pip install shadowsocks'
