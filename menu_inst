@@ -128,7 +128,7 @@ payload="/etc/payloads"
 echo -e "" > /etc/payloads
 echo -e " ${txt[219]}"
 echo -e " ${txt[220]}" 
-read -p " ("Agregar Host"): " hos
+read -p " (Agregar Host): " hos
 if [[ $hos != \.* ]]; then
 echo -e "$barra"
 echo -e "\033[1;31m (" [!] Host-Squid debe iniciar con "."")\033[0m"
