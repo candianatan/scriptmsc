@@ -891,27 +891,27 @@ return 0
 
 web_min () {
  [[ -e /etc/webmin/miniserv.conf ]] && {
- echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "REMOVENDO WEBMIN")\n$barra"
+ echo -e "$barra\n\033[1;32mREMOVENDO WEBMIN)\n$barra"
  fun_bar "apt-get remove webmin -y"
- echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "Webmin Removido")\n$barra"
+ echo -e "$barra\n\033[1;32mWebmin Removido)\n$barra"
  [[ -e /etc/webmin/miniserv.conf ]] && rm /etc/webmin/miniserv.conf
  return 0
  }
-echo -e " \033[1;36mInstalling Webmin, aguarde:"
+echo -e " \033[1;36mInstalando Webmin, espere:"
 fun_bar "wget http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
 fun_bar "dpkg --install webmin_1.850_all.deb"
 fun_bar "apt-get -y -f install"
 rm /root/webmin_1.881_all.deb > /dev/null 2>&1
 service webmin restart > /dev/null 2>&1 
-echo -e "${barra}\n $(source trans -b pt:${id} "Accede via web usando el enlace: https;//ip_del_vps:10000")\n${barra}"
-echo -e "$(source trans -b pt:${id} "Procedimento Concluido")\n${barra}"
+echo -e "${barra}\n Accede via web usando el enlace: https;//ip_del_vps:10000)\n${barra}"
+echo -e " "Procedimento terminado")\n${barra}"
 return 0
 }
 
 iniciarsocks () {
 pstop () {
 [[ -e /etc/adm-lite/sockson ]] && {
-echo -e "${barra}\n $(source trans -b pt:${id} "Parando Socks Python")\n${barra}"
+echo -e "${barra}\n Parando Socks Python)\n${barra}"
 pidproxy=$(ps x | grep "proxypub.py" | grep -v "grep" | awk -F "pts" '{print $1}')
 fun_bar "kill -9 $pidproxy"
 pidproxy2=$(ps x | grep "proxypriv.py" | grep -v "grep" | awk -F "pts" '{print $1}')
@@ -920,7 +920,7 @@ pidproxy3=$(ps x | grep "proxydirect.py" | grep -v "grep" | awk -F "pts" '{print
 fun_bar "kill -9 $pidproxy3"
 pidproxy4=$(ps x | grep "openproxy.py" | grep -v "grep" | awk -F "pts" '{print $1}')
 fun_bar "kill -9 $pidproxy4"
-echo -e "${barra}\n $(source trans -b pt:${id} "Socks Parado")\n${barra}"
+echo -e "${barra}\n Socks Parado)\n${barra}"
 rm /etc/adm-lite/sockson
 [[ -e /etc/adm-lite/sockpub ]] && rm /etc/adm-lite/sockpub
 [[ -e /etc/adm-lite/sockpriv ]] && rm /etc/adm-lite/sockpriv
@@ -990,7 +990,7 @@ read -p " Option: " portproxy
 	return 0
     esac
 done
-echo -e "${barra}\n "Procedimento Concluido"\n${barra}"
+echo -e "${barra}\n "Procedimento terminado"\n${barra}"
 return 0
 }
 
