@@ -621,7 +621,7 @@ teste_porta () {
   echo -ne " \033[1;31m"Verificando: ")"
   sleep 1s
   [[ ! $(mportas | grep $1) ]] && {
-    echo -e " \033[1;33m$(source trans -b es:${id} "Abriendo un Puerto en Python")"
+    echo -e " \033[1;33m$Abriendo un Puerto en Python"
     cd /etc/adm-lite
     [[ $(screen -h|wc -l) -lt '30' ]] && apt-get install screen -y 
     screen -dmS screen python ./openproxy.py "$1"    
