@@ -306,7 +306,7 @@ idioma[1]="en English"
 idioma[2]="fr Franch"
 idioma[3]="de German"
 idioma[4]="it Italian"
-idioma[5]="pt Portuguese"
+idioma[5]="pt Portugues"
 idioma[6]="es Spanish"
 i="1"
 echo -e "${cor[1]} =================================== ${cor[0]}"
@@ -727,8 +727,8 @@ rm $porta_var
 credit=$(cat ./menu_credito)
 __IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
-echo -e "${cor[2]}        $ \033[1;37m$credit${cor[2]} $ "
-echo -e "${cor[2]}              \033[1;37mMSC PERÚ${cor[2]} "
+echo -e "${cor[2]} $ \033[1;37m$credit${cor[2]} "
+echo -e "${cor[2]} $ \033[1;37mMSC PERÚ${cor[2]} "
 echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
 [[ "$VERIFICAR" = "on" ]] && 
 echo -e "${cor[2]} ♡ \033[1;37m${txt[1]} $__onlines ${cor[2]}    ♡ \033[1;37m${txt[2]} $__vencidos"
