@@ -527,7 +527,7 @@ elif [[ "$sin_nao" = @(n|N) ]]; then
 break
 fi
 done
-echo '</h8><font color="purple">SCRIPT-FREE-MSC</font></h8>' >> $local
+echo '</h8><font color="blue">SCRIPT-GRATIS-MSC</font></h8>' >> $local
 echo '<h1><font>=============================</font></h1>' >> $local
 if [ -e "$local2" ]; then
 rm $local2  > /dev/null 2>&1
