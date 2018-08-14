@@ -898,11 +898,12 @@ web_min () {
  return 0
  }
 echo -e " \033[1;36mInstalando Webmin, espere:"
-fun_bar "wget http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
-fun_bar "dpkg --install webmin_1.850_all.deb"
-fun_bar "apt-get -y -f install"
-rm /root/webmin_1.881_all.deb > /dev/null 2>&1
-service webmin restart > /dev/null 2>&1 
+fun_bar wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
+dpkg --install webmin_1.850_all.deb;
+apt-get -y -f install;
+rm /root/webmin_1.850_all.deb
+sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
+service webmin restart
 echo -e "${barra}\n Accede via web usando el enlace: https;//ip_del_vps:10000)\n${barra}"
 echo -e " "Procedimento terminado")\n${barra}"
 return 0
