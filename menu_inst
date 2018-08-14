@@ -1242,7 +1242,7 @@ read -p " Enter";;
 fun_dropbear
 read -p " Enter";;
 3)
-fun_openvpn
+wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/mscvip/openvpn-msc.sh -O openvpn-msc.sh && bash openvpn-msc.sh
 read -p " Enter";;
 4)
 ssl_stunel
