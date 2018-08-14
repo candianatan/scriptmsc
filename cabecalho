@@ -714,7 +714,8 @@ b=$(sed -n "$i"p $porta_var | awk '{print $2}')
 i=$(($i+1))
 c=$(sed -n "$i"p $porta_var | awk '{print $1}')
 d=$(sed -n "$i"p $porta_var | awk '{print $2}')
-[[ "$c" != "" ]] && texto_="${cor[2]} ▪ \033[1;37m$c: \033[1;31m$d" || texto_=""
+[[ "$c" != "" ]] && texto_="${cor[2]} 
+ ▪ \033[1;37m$c: \033[1;31m$d" || texto_=""
 [[ "$a" = "" ]] && break
 i=$(($i+1))
 echo -e "$texto $texto_"
@@ -731,7 +732,8 @@ echo -e "${cor[2]} $ \033[1;37m$credit${cor[2]} "
 echo -e "${cor[2]} $ \033[1;37mMSC PERÚ${cor[2]} "
 echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
 [[ "$VERIFICAR" = "on" ]] && 
-echo -e "${cor[2]} ♡ \033[1;37m${txt[1]} $__onlines ${cor[2]}    ♡ \033[1;37m${txt[2]} $__vencidos"
+echo -e "${cor[2]} ♡ \033[1;37m${txt[1]} $__onlines ${cor[2]}    
+ ♡ \033[1;37m${txt[2]} $__vencidos"
 echo -e "${cor[2]} ♡ \033[1;37m${txt[3]} $_os"
 echo -e "${cor[2]} ♡ \033[1;37m${txt[331]} \033[1;31m$__IP"
 echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
