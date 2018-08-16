@@ -28,7 +28,10 @@ remover_adm
 exit
 ;;
 5)
-msc
+minhas_portas
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
 source menu
 exit
 ;;
@@ -38,7 +41,10 @@ source menu
 exit
 ;;
 7)
-msc
+source ferramentascodes 10
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
 source menu
 exit
 ;;
