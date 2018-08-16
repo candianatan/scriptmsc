@@ -891,9 +891,9 @@ return 0
 
 web_min () {
  [[ -e /etc/webmin/miniserv.conf ]] && {
- echo -e "$barra\n\033[1;32mREMOVENDO WEBMIN)\n$barra"
+ echo -e "$barra\n\033[1;32m ELIMINANDO WEBMIN)\n$barra"
  fun_bar "apt-get remove webmin -y"
- echo -e "$barra\n\033[1;32mWebmin Removido)\n$barra"
+ echo -e "$barra\n\033[1;32m Webmin Eliminado)\n$barra"
  [[ -e /etc/webmin/miniserv.conf ]] && rm /etc/webmin/miniserv.conf
  return 0
  }
