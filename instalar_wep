@@ -47,17 +47,17 @@ echo -e "${am}Ahora vamos a poner un USER y CONTRASEÑA de acceso a la página d
 
 cd /var/www/
    rm -rf index.html > /dev/null 2>&1
-   cp /etc/adm-lite/painel.zip /var/www/
-   unzip painel.zip > /dev/null 2>&1
-   rm -rf painel.zip > /dev/null 2>&1
+   cp /etc/adm-lite/mscwep.zip /var/www/
+   unzip mscwep.zip > /dev/null 2>&1
+   rm -rf mscwep.zip > /dev/null 2>&1
    chmod -R 777 /var/www/adm > /dev/null 2>&1
 sed -i "s;123;$var7;g" /var/www/adm/system/seguranca.php > /dev/null 2>&1
 
 cd /var/www/html/
    rm -rf index.html > /dev/null 2>&1
-   cp /etc/adm-lite/painel.zip /var/www/html/
-   unzip painel.zip > /dev/null 2>&1
-   rm -rf painel.zip > /dev/null 2>&1 
+   cp /etc/adm-lite/mscwep.zip /var/www/html/
+   unzip mscwep.zip > /dev/null 2>&1
+   rm -rf mscwep.zip > /dev/null 2>&1 
    chmod -R 777 /var/www/html/adm > /dev/null 2>&1
 sed -i "s;123;$var7;g" /var/www/html/adm/system/seguranca.php > /dev/null 2>&1
 
