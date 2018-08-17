@@ -9,7 +9,6 @@ echo -e "${cor[0]}"
 exit
 ;;
 1)
-clear
 remover_adm
 exit
 ;;
