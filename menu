@@ -19,8 +19,11 @@ source ferramentas
 exit
 ;;
 3)
-clear
-msc
+source usercodes 5
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
 exit
 ;;
 4)
