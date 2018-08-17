@@ -38,15 +38,15 @@ source menu
 exit
 ;;
 6)
-funcao_verificacao > /dev/null 2>&1
-source menu
-exit
-;;
-7)
 source ferramentascodes 10
 echo -ne "${cor[5]}"
 read -p " ${txt[47]}"
 cd /etc/adm-lite
+source menu
+exit
+;;
+7)
+funcao_verificacao > /dev/null 2>&1
 source menu
 exit
 ;;
@@ -64,7 +64,7 @@ echo '/bin/adm' >> /etc/bash.bashrc.2
 cp /etc/bash.bashrc /etc/bash.bashrc-bakup
 mv -f /etc/bash.bashrc.2 /etc/bash.bashrc
 echo -e "${cor[1]} =================================== ${cor[0]}"
-echo -e "${cor[2]} \033[1;32mAUTORUN INICIADO!"
+echo -e "${cor[2]} \033[1;32mAUTO INICIO INICIADO!"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 fi
 sleep 2s
