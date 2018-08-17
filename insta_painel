@@ -15,16 +15,16 @@ echo -e "${f}"
 sleep 2
 echo
 echo -e "${ver}            +++++ ATENCIÓN +++++${am}     
-TODAS LAS CONTRASEÑAS A SEGUIR COLOCAR SIEMPRE LA MISMA${f}"
+TODAS LAS CONTRASEÑAS PARA SEGUIR COLOCAR SIEMPRE LA MISMA${f}"
 read -p "Enter, Para seguir!"
 apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
 apt-get install mysql-server php5-mysql -y
 mysql_install_db
 echo ""
-echo -e "${am}Siempre que se le solicite${ver}[Y/N]${am}elegir la opción${ver}Y${am} y de ${ve}OK.${am} para todo que pedir.
+echo -e "${am}Siempre que se le solicite${ver}[Y/N]${am}elegir la opción${ver}Y${am} y de ${ve}OK.${am} para todo que pede.
 ...
 ${am}El siguiente procedimiento de instalación te pedirá una contraseña
-ahora escriba la contraseña que escribió antes y reconfirma ella ay después del ir apartando ${ver}Y${f}"
+ahora escriba la contraseña que escribió antes y reconfirma ella ay después ir al apartando ${ver}Y${f}"
 read -p "Enter, Para seguir!"
 mysql_secure_installation
 echo -e "${az}ESPERE LA INSTALACION${f}"
@@ -38,7 +38,7 @@ tput setaf 7 ; tput bold ; read -p "Escriba la misma contraseña (MySQL Password
 echo ""
 stty echo ; echo
 mysql -h localhost -u root -p$var7 -e "CREAR BASE DE DATOS"
-echo -e "${ver}ATENCIÓN - LOGO A SEGUIR ES PERSONAL NO DIVULGUEN ${f}"
+echo -e "${ver}ATENCIÓN - LUEGO A SEGUIR ES PERSONAL NO DIVULGUES ${f}"
 echo ""
 echo -e "${am}Ahora vamos a poner un USER y CONTRASEÑA de acceso a la página de carga${ve}"
 	read -p "usuario: " var2
@@ -71,7 +71,7 @@ sed -i "s;adm4321;$var3;g" ./banco_de_dados.sql > /dev/null 2>&1
 mysql -h localhost -u root -p$var7 adm < banco_de_dados.sql > /dev/null 2>&1
 rm -rf /var/www/temp
 
-echo -e "${am}PANEL DE UPLOAD DE EHI INSTALADO PARA ENTRAR EN SU PANEL ACCESSO
+echo -e "${am}PANEL DE UPLOAD DE EHI INSTALADO PARA ENTRAR EN SU PANEL DE ACCESSO
 ${az}-------------------------------------------------------------------
 ${ver}Url: ${ve}$ip:80/iniciar.php
 ${am}usuario: ${ve}$var2
