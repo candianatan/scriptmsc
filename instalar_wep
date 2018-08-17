@@ -21,7 +21,7 @@ apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
 apt-get install mysql-server php5-mysql -y
 mysql_install_db
 echo ""
-echo -e "${am}Siempre que se le solicite${ver}[Y/N]${am}elegir la opción${ver}Y${am} y de ${ve}OK.${am} para todo que pede.
+echo -e "${am}Siempre que se le solicite${ver}[Y/N]${am}elegir la opción ${ver}Y${am} y de ${ve}OK.${am} para todo que pide.
 ...
 ${am}El siguiente procedimiento de instalación te pedirá una contraseña
 ahora escriba la contraseña que escribió antes y reconfirma ella ay después ir al apartando ${ver}Y${f}"
