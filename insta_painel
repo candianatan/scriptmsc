@@ -10,39 +10,39 @@ MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 apt-get install figlet -y > /dev/null 2>&1
 meu_ip
 echo -e "${az}"
-figlet ADM.PRO ULTIMATE
+figlet MSC PERU
 echo -e "${f}"
 sleep 2
 echo
-echo -e "${ver}            +++++ ATENÇÃO +++++${am}     
-TODAS AS SENHA A SEGUIR COLOQUE SEMPRE A MESMA${f}"
-read -p "Enter, Para Prosseguir!"
+echo -e "${ver}            +++++ ATENCIÓN +++++${am}     
+TODAS LAS CONTRASEÑAS A SEGUIR COLOCAR SIEMPRE LA MISMA${f}"
+read -p "Enter, Para seguir!"
 apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
 apt-get install mysql-server php5-mysql -y
 mysql_install_db
 echo ""
-echo -e "${am}Sempre que solicitado${ver}[Y/N]${am}escolha a opção${ver}Y${am} e de ${ve}OK.${am} para tudo que pedir.
+echo -e "${am}Siempre que se le solicite${ver}[Y/N]${am}elegir la opción${ver}Y${am} y de ${ve}OK.${am} para todo que pedir.
 ...
-${am}O proximo procedimento de instalaçao vai te pedir uma senha
-ai vcs digita a senha que digitou antes e reconfirma ela ai depois do ir apertando ${ver}Y${f}"
-read -p "Enter, Para Prosseguir!"
+${am}El siguiente procedimiento de instalación te pedirá una contraseña
+ahora escriba la contraseña que escribió antes y reconfirma ella ay después del ir apartando ${ver}Y${f}"
+read -p "Enter, Para seguir!"
 mysql_secure_installation
-echo -e "${az}AGUARDE A INSTALAÇÃO${f}"
+echo -e "${az}ESPERE LA INSTALACION${f}"
 sleep 2
 apt-get install phpmyadmin -y
 php5enmod mcrypt
 service apache2 restart
 echo ""
 stty -echo
-tput setaf 7 ; tput bold ; read -p "Digita a mesma senha (MySQL Password): " var7 ; tput sgr0
+tput setaf 7 ; tput bold ; read -p "Escriba la misma contraseña (MySQL Password): " var7 ; tput sgr0
 echo ""
 stty echo ; echo
-mysql -h localhost -u root -p$var7 -e "CREATE DATABASE adm"
-echo -e "${ver}ATENÇÃO - LOGIN ASEGUIR É PESSOAL NAO DIVULGUEM ${f}"
+mysql -h localhost -u root -p$var7 -e "CREAR BASE DE DATOS"
+echo -e "${ver}ATENCIÓN - LOGO A SEGUIR ES PERSONAL NO DIVULGUEN ${f}"
 echo ""
-echo -e "${am}Agora vamos colocar um LOGIN e SENHA de acesso a pagina de upload${ve}"
-	read -p "Login: " var2
-	read -p "Senha: " var3
+echo -e "${am}Ahora vamos a poner un USER y CONTRASEÑA de acceso a la página de carga${ve}"
+	read -p "usuario: " var2
+	read -p "contraseña: " var3
 	echo -ne "${f}"
 
 cd /var/www/
@@ -71,15 +71,15 @@ sed -i "s;adm4321;$var3;g" ./banco_de_dados.sql > /dev/null 2>&1
 mysql -h localhost -u root -p$var7 adm < banco_de_dados.sql > /dev/null 2>&1
 rm -rf /var/www/temp
 
-echo -e "${am}PAINEL DE UPLOAD DE EHI INSTALADO PARA ENTRAR NO SEU PAINEL ACESSE
+echo -e "${am}PANEL DE UPLOAD DE EHI INSTALADO PARA ENTRAR EN SU PANEL ACCESSO
 ${az}-------------------------------------------------------------------
-${ver}Url: ${ve}$ip:81/login.php
-${am}Login: ${ve}$var2
-${am}Senha: ${ve}$var3
-${am}LINK PAGINA INICIAL ${ve}( $ip:81 )
+${ver}Url: ${ve}$ip:80/iniciar.php
+${am}usuario: ${ve}$var2
+${am}contraseña: ${ve}$var3
+${am}LINK DE PAGINA INICIAL ${ve}( $ip:80 )
 ${az}-------------------------------------------------------------------${f}"
 echo -e "${am}"
-read -p "Aperte ENTER, Para continuar" naoa
+read -p "ENTER, Para continuar" naoa
 sleep 2
 echo -e "${f}"
 exit
