@@ -10,24 +10,23 @@ exit
 ;;
 1)
 clear
-source user
+remover_adm
 exit
 ;;
 2)
 clear
-source ferramentas
+source user
 exit
 ;;
 3)
+source ferramentas
+;;
+4)
 source usercodes 5
 echo -ne "${cor[5]}"
 read -p " ${txt[47]}"
 cd /etc/adm-lite
 source menu
-exit
-;;
-4)
-remover_adm
 exit
 ;;
 5)
