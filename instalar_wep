@@ -10,39 +10,39 @@ MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 apt-get install figlet -y > /dev/null 2>&1
 meu_ip
 echo -e "${az}"
-figlet MSC PERÚ
+figlet MSC PERU
 echo -e "${f}"
 sleep 2
 echo
-echo -e "${ver}            +++++ ATENÇIÓN +++++${am}     
-TODAS AS SENHA A SEGUIR COLOQUE SEMPRE A MESMA${f}"
-read -p "Enter, Para Prosseguir!"
+echo -e "${ver}            +++++ ATENCION +++++${am}     
+TODAS LAS CONTRASEÑAS COLOCAR SIEMPRE LA MISMA${f}"
+read -p "Enter, Para continuar!"
 apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
 apt-get install mysql-server php5-mysql -y
 mysql_install_db
 echo ""
-echo -e "${am}Sempre que solicitado${ver}[Y/N]${am}escolha a opção${ver}Y${am} e de ${ve}OK.${am} para tudo que pedir.
+echo -e "${am}Siempre que solicita${ver}[Y/N]${am}elija la opcion${ver}Y${am} y de ${ve}OK.${am} para todo que pide.
 ...
-${am}O proximo procedimento de instalaçao vai te pedir uma senha
+${am}y proximo procedimiento de instalacion te pedira una contraseña
 ai vcs digita a senha que digitou antes e reconfirma ela ai depois do ir apertando ${ver}Y${f}"
-read -p "Enter, Para Prosseguir!"
+read -p "Enter, Para continuar!"
 mysql_secure_installation
-echo -e "${az}AGUARDE A INSTALAÇÃO${f}"
+echo -e "${az}ESPERE ESTA INSTALANDO${f}"
 sleep 2
 apt-get install phpmyadmin -y
 php5enmod mcrypt
 service apache2 restart
 echo ""
 stty -echo
-tput setaf 7 ; tput bold ; read -p "Digita a mesma senha (MySQL Password): " var7 ; tput sgr0
+tput setaf 7 ; tput bold ; read -p "Digite la misma contraseña (MySQL): " var7 ; tput sgr0
 echo ""
 stty echo ; echo
 mysql -h localhost -u root -p$var7 -e "CREATE DATABASE adm"
-echo -e "${ver}ATENÇÃO - LOGIN ASEGUIR É PESSOAL NAO DIVULGUEM ${f}"
+echo -e "${ver}ATENCION - USUARIO A SEGUIR ES PERSONAL NO DIVULGUE ${f}"
 echo ""
-echo -e "${am}Agora vamos colocar um LOGIN e SENHA de acesso a pagina de upload${ve}"
-	read -p "Login: " var2
-	read -p "Senha: " var3
+echo -e "${am}Ahora vamos a poner un USER y CONTRASEÑA de acceso a la página de carga${ve}"
+	read -p "USER: " var2
+	read -p "CONTRASEÑA: " var3
 	echo -ne "${f}"
 
 cd /var/www/
