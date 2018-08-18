@@ -10,39 +10,39 @@ MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 apt-get install figlet -y > /dev/null 2>&1
 meu_ip
 echo -e "${az}"
-figlet MSC PERU
+figlet MSC PERÚ
 echo -e "${f}"
 sleep 2
 echo
-echo -e "${ver}            +++++ ATENCIÓN +++++${am}     
-TODAS LAS CONTRASEÑAS PARA SEGUIR COLOCAR SIEMPRE LA MISMA${f}"
-read -p "Enter, Para seguir!"
+echo -e "${ver}            +++++ ATENÇIÓN +++++${am}     
+TODAS AS SENHA A SEGUIR COLOQUE SEMPRE A MESMA${f}"
+read -p "Enter, Para Prosseguir!"
 apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
 apt-get install mysql-server php5-mysql -y
 mysql_install_db
 echo ""
-echo -e "${am}Siempre que se le solicite${ver}[Y/N]${am}elegir la opción ${ver}Y${am} y de ${ve}OK.${am} para todo que pide.
+echo -e "${am}Sempre que solicitado${ver}[Y/N]${am}escolha a opção${ver}Y${am} e de ${ve}OK.${am} para tudo que pedir.
 ...
-${am}El siguiente procedimiento de instalación te pedirá una contraseña
-ahora escriba la contraseña que escribió antes y reconfirma ella ay después ir al apartando ${ver}Y${f}"
-read -p "Enter, Para seguir!"
+${am}O proximo procedimento de instalaçao vai te pedir uma senha
+ai vcs digita a senha que digitou antes e reconfirma ela ai depois do ir apertando ${ver}Y${f}"
+read -p "Enter, Para Prosseguir!"
 mysql_secure_installation
-echo -e "${az}ESPERE LA INSTALACION${f}"
+echo -e "${az}AGUARDE A INSTALAÇÃO${f}"
 sleep 2
 apt-get install phpmyadmin -y
 php5enmod mcrypt
 service apache2 restart
 echo ""
 stty -echo
-tput setaf 7 ; tput bold ; read -p "Escriba la misma contraseña (MySQL Password): " var7 ; tput sgr0
+tput setaf 7 ; tput bold ; read -p "Digita a mesma senha (MySQL Password): " var7 ; tput sgr0
 echo ""
 stty echo ; echo
 mysql -h localhost -u root -p$var7 -e "CREATE DATABASE adm"
-echo -e "${ver}ATENCIÓN - LUEGO A SEGUIR ES PERSONAL NO DIVULGUES ${f}"
+echo -e "${ver}ATENÇÃO - LOGIN ASEGUIR É PESSOAL NAO DIVULGUEM ${f}"
 echo ""
-echo -e "${am}Ahora vamos a poner un USER y CONTRASEÑA de acceso a la página de carga${ve}"
-	read -p "usuario: " var2
-	read -p "contraseña: " var3
+echo -e "${am}Agora vamos colocar um LOGIN e SENHA de acesso a pagina de upload${ve}"
+	read -p "Login: " var2
+	read -p "Senha: " var3
 	echo -ne "${f}"
 
 cd /var/www/
