@@ -24,7 +24,7 @@ echo ""
 echo -e "${am}Siempre que solicita${ver}[Y/N]${am}elija la opcion${ver}Y${am} y de ${ve}OK.${am} para todo que pide.
 ...
 ${am}y proximo procedimiento de instalacion te pedira una contraseña
-ai vcs digita a senha que digitou antes e reconfirma ela ai depois do ir apertando ${ver}Y${f}"
+y digite la contraseña ${ver}Y${f}"
 read -p "Enter, Para continuar!"
 mysql_secure_installation
 echo -e "${az}ESPERE ESTA INSTALANDO${f}"
