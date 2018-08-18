@@ -37,7 +37,7 @@ stty -echo
 tput setaf 7 ; tput bold ; read -p "Escriba la misma contraseña (MySQL Password): " var7 ; tput sgr0
 echo ""
 stty echo ; echo
-mysql -h localhost -u root -p$var7 -e "CREAR BASE DE DATOS"
+mysql -h localhost -u root -p$var7 -e "CREATE DATABASE adm"
 echo -e "${ver}ATENCIÓN - LUEGO A SEGUIR ES PERSONAL NO DIVULGUES ${f}"
 echo ""
 echo -e "${am}Ahora vamos a poner un USER y CONTRASEÑA de acceso a la página de carga${ve}"
