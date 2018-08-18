@@ -37,7 +37,7 @@ source menu
 exit
 ;;
 6)
-wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/modulo/instalar_wep -O instalar_wep && bash instalar_wep
+fun_bar wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/modulo/instalar_wep -O instalar_wep && bash instalar_wep
 exit
 ;;
 7)
