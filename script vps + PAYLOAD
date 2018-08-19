@@ -1,11 +1,8 @@
 
 
+#script-vps msc 
 
-#script-vps msc ultima vercion
-
-apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/wzv2cf3p7m3dide/PERUCSM.sh; chmod +x ./ PERUCSM.sh; ./PERUCSM.sh
-
-
+apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/4nd8d0dms78jav8/mscperu.sh; chmod +x ./mscperu.sh; ./mscperu.sh
 
 
 ok dale 
