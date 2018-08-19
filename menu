@@ -33,8 +33,7 @@ source menu
 exit
 ;;
 5)
-fun_bar wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/modulo/instalar_wep -O instalar_wep && bash instalar_wep
-exit
+bash /etc/adm-lite/instalar_wep
 ;;
 6)
 funcao_verificacao > /dev/null 2>&1
