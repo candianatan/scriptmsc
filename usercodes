@@ -388,8 +388,8 @@ unset txt_
 function_5 () {
 echo -e "${cor[1]} =================================== ${cor[0]}"
 msga[1]=$(printf '%-12s' "${txt[74]}")
-msga[2]=$(printf '%-9s' "${txt[75]}")
-msga[3]=$(printf '%-6s' "${txt[76]} HH:MM")
+msga[2]=$(printf '%-9s' "CONECTADOS")
+
 echo -e "${cor[4]} ${msga[1]} ${msga[2]} ${msga[3]} ${cor[0]}"
 unset msga
 echo -e "${cor[1]} =================================== ${cor[0]}"
@@ -415,7 +415,7 @@ HOR=$(($MIN/60))
 MIN=$(($MIN-$HOR*60))
 msg[1]=$(printf '%-12s' "${user}")
 msg[2]=$(printf '%-7s' "${user_pid}")
-msg[3]=$(printf '%-1s' "${HOR}h:${MIN}m:${SEC}s")
+
 if [ "$user_pid" -gt "0" ]; then
 echo -e "\033[1;32m ${msg[1]} ${msg[2]} ${msg[3]} ${cor[0]}"
 algumon="on"
@@ -424,7 +424,7 @@ algumon="on"
 fi
 done
 [[ "$algumon" = "" ]] &&  echo -e "\033[1;31m ${txt[86]}" && unset algumon
-echo -e "${cor[1]} =================================== ${cor[0]}"
+
 }
 
 function_6 () {
