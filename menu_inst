@@ -1037,7 +1037,7 @@ echo -e "$barra\n Gettunel "no se ha iniciado"\n$barra"
 
 tcpbypass_fun () {
 [[ -e /etc/adm-lite/edbypass ]] && {
-echo -e "$barra\n $(source trans -b pt:${id} "Parando Tcp Bypass")\n$barra"
+echo -e "$barra\n "Parando Tcp Bypass")\n$barra"
 pid=$(ps x | grep "scktcheck" | grep -v grep | awk '{print $1}')
 if [ "$pid" != "" ]; then
 for pids in $(echo $pid); do
