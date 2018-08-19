@@ -1116,12 +1116,12 @@ return 0
 
 painel_upload () {
 echo -e "$barra"
-echo -e "${cor[2]}$(source trans -b pt:${id} "Desea Instalar Panel De Upload msc?")"
+echo -e "${cor[2]} ("Desea Instalar Panel De descargas msc?")"
 echo -e "$barra"
 read -p " [ s | n ]: " up_load
 echo -e "$barra"
    [[ "$up_load" = @(s|S|y|Y) ]] && bash /etc/adm-lite/instalar_wep || {
-   echo -e "${cor[2]}$(source trans -b pt:${id} "Instalación cancelado")"
+   echo -e "${cor[2]} ("Instalación cancelado")"
    echo -e "$barra"
    }
 }
@@ -1230,7 +1230,7 @@ echo -e "${cor[2]} [7] □ ${cor[3]}PROXY GETTUNEL $gettun"
 echo -e "${cor[2]} [8] □ ${cor[3]}TCP OVER BYPASS $tcpbypass"
 echo -e "${cor[2]} [9] □ ${cor[3]}TELEGRAN MANAGER BOT $telegran"
 echo -e "${cor[2]} [10]□ ${cor[3]}WEBMIN $webminn"
-echo -e "${cor[2]} [11]□ ${cor[3]}ANTI-DDOS $ddos"
+echo -e "${cor[2]} [11]□ ${cor[3]}WEP MSC $ddos"
 echo -e "$barra"
 echo -ne "\033[1;37m ${txt[338]}: "
 read optons
@@ -1266,7 +1266,7 @@ read -p " Enter";;
 web_min
 read -p " Enter";;
 11)
-antiddos
+painel_upload
 read -p " Enter";;
 esac
 
