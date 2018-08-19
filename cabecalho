@@ -723,9 +723,11 @@ rm $portas_var
 rm $porta_var
 }
 
-[[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m¡BIENVENIDO AL MENÚ!" || vesaoSCT="\033[1;31m¡BIENVENIDO AL MENÚ!"
+[[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m~●》》》BIENVENIDO AL MENÚ《《《●~" || vesaoSCT="\033[1;31mBIENVENIDO AL MENÚ!"
 credit=$(cat ./menu_credito)
 __IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
+echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
+echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
 echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
 echo -e "${cor[2]} $ \033[1;37m$credit${cor[2]} "
 echo -e "${cor[2]} $ \033[1;37mMSC PERÚ${cor[2]} "
@@ -736,5 +738,3 @@ echo -e "${cor[2]} ♡  \033[1;37m${txt[3]} $_os"
 echo -e "${cor[2]} ♡  \033[1;37m${txt[331]} \033[1;31m$__IP"
 echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
 ports_
-echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
-echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
