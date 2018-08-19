@@ -1005,18 +1005,18 @@ fun_bar "kill -9 $pids"
 done
 fi
 rm /etc/adm-lite/gettun
-echo -e "${barra}\n Gettunel "desactivado")\n${barra}"
+echo -e "${barra}\n (Gettunel "desactivado")\n${barra}"
 return 0
 }
 echo -e "${barra}\n GETTUNEL PROXY\n${barra}"
-echo -e "${cor[3]} "seleccione Un Puerto donde Gettunel va Escuchar")"
+echo -e "${cor[3]} ("seleccione Un Puerto donde Gettunel va Escuchar")"
 while true; do
 unset portas
 echo -ne "\033[1;37m"
 	 read -p " Local-Port: " portas
 	 if [[ ! -z $portas ]]; then
 		 if [[ $(echo $portas|grep [0-9]) ]]; then
-		[[ $(mportas|grep $portas) = "" ]] && break || echo -e " $(source trans -b pt:${id} "Porta Invalida")"
+		[[ $(mportas|grep $portas) = "" ]] && break || echo -e " ("Puerto invalido")"
 		fi
 	fi
 done
