@@ -942,7 +942,7 @@ echo -ne "\033[1;37m"
 	 read -p " Local-Port: " porta_socket
 	 if [[ ! -z $porta_socket ]]; then
 		 if [[ $(echo $porta_socket|grep [0-9]) ]]; then
-			[[ $(mportas|grep $porta_socket) = "" ]] && break || echo -e "\033[1;31m (Puerto Invalido")"
+			[[ $(mportas|grep $porta_socket) = "" ]] && break || echo -e "\033[1;31m "Puerto Invalido")"
 		 fi
 	 fi
 done
