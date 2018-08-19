@@ -73,10 +73,10 @@ rm -rf /var/www/temp
 
 echo -e "${am}PANEL DE UPLOAD DE EHI INSTALADO PARA ENTRAR EN SU PANEL DE ACCESSO
 ${az}-------------------------------------------------------------------
-${ver}Url: ${ve}$ip:80/iniciar.php
+${ver}Url: ${ve}$ip:/iniciar.php
 ${am}usuario: ${ve}$var2
 ${am}contraseña: ${ve}$var3
-${am}LINK DE PAGINA INICIAL ${ve}( $ip:80 )
+${am}LINK DE PAGINA INICIAL ${ve}( $ip: )
 ${az}-------------------------------------------------------------------${f}"
 echo -e "${am}"
 read -p "ENTER, Para continuar" naoa
