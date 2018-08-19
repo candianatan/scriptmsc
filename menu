@@ -9,18 +9,14 @@ echo -e "${cor[0]}"
 exit
 ;;
 1)
-remover_adm
-exit
-;;
-2)
 clear
 source user
 exit
 ;;
-3)
+2)
 source ferramentas
 ;;
-4)
+3)
 source usercodes 5
 echo -ne "${cor[5]}"
 read -p " ${txt[47]}"
@@ -28,7 +24,7 @@ cd /etc/adm-lite
 source menu
 exit
 ;;
-5)
+4)
 minhas_portas
 echo -ne "${cor[5]}"
 read -p " ${txt[47]}"
@@ -36,16 +32,16 @@ cd /etc/adm-lite
 source menu
 exit
 ;;
-6)
+5)
 fun_bar wget https://raw.githubusercontent.com/scriptmsc/scriptmsc/modulo/instalar_wep -O instalar_wep && bash instalar_wep
 exit
 ;;
-7)
+6)
 funcao_verificacao > /dev/null 2>&1
 source menu
 exit
 ;;
-8)
+7)
 if [[ -e /etc/bash.bashrc-bakup ]]; then
 mv -f /etc/bash.bashrc-bakup /etc/bash.bashrc
 cat /etc/bash.bashrc | grep -v "/bin/adm" > /tmp/bash
@@ -66,12 +62,16 @@ sleep 2s
 source menu
 exit
 ;;
-9)
+8)
 $value > /dev/null 2>&1
 chmod +x /etc/adm-lite/*
 [[ -e /etc/adm-lite/idioma_menuinst ]] && idioma=$(cat /etc/adm-lite/idioma_menuinst|head -1) || idioma="pt"
 value=$(vary_rex "2f6574632f61646d2d6c6974652f6d656e755f696e7374")
 ${value} ${idioma}
+;;
+9)
+remover_adm
+exit
 ;;
 *)
 source menu
