@@ -85,7 +85,7 @@ fun_squid  () {
   service squid3 restart > /dev/null 2>&1
   service squid restart > /dev/null 2>&1
   [[ -e $var_squid ]] && {
-  echo -e "$barra\n\033[1;32m ("REMOVIENDO SQUID")\n$barra"
+  echo -e "$barra\n\033[1;32m ("ELIMINANDO SQUID")\n$barra"
   fun_bar "apt-get remove squid3 -y"
   service squid stop > /dev/null 2>&1
   service squid3 stop > /dev/null 2>&1
@@ -94,11 +94,11 @@ fun_squid  () {
   return 0
   }
 #Instalar
-echo -e "$barra\n\033[1;32m ("INSTALADOR SQUID CSM")\n$barra"
+echo -e "$barra\n\033[1;32m ("INSTALADOR DE SQUID CSM")\n$barra"
 fun_ip
 echo -ne "("Confirme su ip")"; read -p ": " -e -i $IP ip
 echo -e "$barra\n ("Ahora elige los Puertos que desea en el Squid")"
-echo -e " ("Seleccione los Puertos, Ejemplo: 80 8080 3128")"
+echo -e " ("Seleccione los Puertos, Ejemplo: 8080 3128")"
 echo -ne " "Digite los Puertos:" "; read portasx
 echo -e "$barra"
 totalporta=($portasx)
@@ -277,9 +277,9 @@ done
 
 fun_dropbear () {
  [[ -e /etc/default/dropbear ]] && {
- echo -e "$barra\n\033[1;32m ("REMOVIENDO DROPBEAR")\n$barra"
+ echo -e "$barra\n\033[1;32m ("ELIMINADO DROPBEAR")\n$barra"
  fun_bar "apt-get remove dropbear -y"
- echo -e "$barra\n\033[1;32m ("Dropbear Removido")\n$barra"
+ echo -e "$barra\n\033[1;32m ("Dropbear ELIMINADO")\n$barra"
  [[ -e /etc/default/dropbear ]] && rm /etc/default/dropbear
  user -k 443/tcp > /dev/null 2>&1
  return 0
@@ -912,7 +912,7 @@ return 0
 iniciarsocks () {
 pstop () {
 [[ -e /etc/adm-lite/sockson ]] && {
-echo -e "${barra}\n Parando Socks Python)\n${barra}"
+echo -e "${barra}\n Deteniendo Socks Python)\n${barra}"
 pidproxy=$(ps x | grep "proxypub.py" | grep -v "grep" | awk -F "pts" '{print $1}')
 fun_bar "kill -9 $pidproxy"
 pidproxy2=$(ps x | grep "proxypriv.py" | grep -v "grep" | awk -F "pts" '{print $1}')
@@ -921,7 +921,7 @@ pidproxy3=$(ps x | grep "proxydirect.py" | grep -v "grep" | awk -F "pts" '{print
 fun_bar "kill -9 $pidproxy3"
 pidproxy4=$(ps x | grep "openproxy.py" | grep -v "grep" | awk -F "pts" '{print $1}')
 fun_bar "kill -9 $pidproxy4"
-echo -e "${barra}\n Socks Parado)\n${barra}"
+echo -e "${barra}\n Socks Detenido)\n${barra}"
 rm /etc/adm-lite/sockson
 [[ -e /etc/adm-lite/sockpub ]] && rm /etc/adm-lite/sockpub
 [[ -e /etc/adm-lite/sockpriv ]] && rm /etc/adm-lite/sockpriv
@@ -942,7 +942,7 @@ echo -ne "\033[1;37m"
 	 read -p " Local-Port: " porta_socket
 	 if [[ ! -z $porta_socket ]]; then
 		 if [[ $(echo $porta_socket|grep [0-9]) ]]; then
-			[[ $(mportas|grep $porta_socket) = "" ]] && break || echo -e "\033[1;31m $(source trans -b pt:${id} "Porta Invalida")"
+			[[ $(mportas|grep $porta_socket) = "" ]] && break || echo -e "\033[1;31m (Puerto Invalido")"
 		 fi
 	 fi
 done
@@ -1116,12 +1116,12 @@ return 0
 
 painel_upload () {
 echo -e "$barra"
-echo -e "${cor[2]}$(source trans -b pt:${id} "Deseja Instalar Painel De Upload?")"
+echo -e "${cor[2]}$(source trans -b pt:${id} "Desea Instalar Panel De Upload msc?")"
 echo -e "$barra"
 read -p " [ s | n ]: " up_load
 echo -e "$barra"
-   [[ "$up_load" = @(s|S|y|Y) ]] && bash /etc/adm-lite/insta_painel || {
-   echo -e "${cor[2]}$(source trans -b pt:${id} "Instalacao Abortada")"
+   [[ "$up_load" = @(s|S|y|Y) ]] && bash /etc/adm-lite/instalar_wep || {
+   echo -e "${cor[2]}$(source trans -b pt:${id} "Instalación canselada")"
    echo -e "$barra"
    }
 }
