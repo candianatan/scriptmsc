@@ -1,6 +1,7 @@
 #!/bin/bash
 source cabecalho
 [[ -e /etc/bash.bashrc-bakup ]] && _autorun="\033[1;32m${txt[10]}" || _autorun="\033[1;31m${txt[11]}"
+source usercodes 5
 echo -e "${cor[1]} \033[0;34m=================================== ${cor[0]}"
 echo -e "${cor[2]} [0] □ \033[1;31m[VOLVER / SALIR]"
 echo -e "${cor[2]} [1] □${cor[3]} ${txt[5]}"
