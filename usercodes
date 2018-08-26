@@ -413,8 +413,8 @@ MIN=$(($SEC/60))
 SEC=$(($SEC-$MIN*60))
 HOR=$(($MIN/60))
 MIN=$(($MIN-$HOR*60))
-msg[1]=$(printf '%-12s' "${user}")
-msg[2]=$(printf '%-7s' "${user_pid}")
+msg[1]=•$(printf '%-12s' "${user}")
+msg[2]=《•$(printf '%-7s' "${user_pid}")
 
 if [ "$user_pid" -gt "0" ]; then
 echo -e "\033[1;32m ${msg[1]} ${msg[2]} ${msg[3]} ${cor[0]}"
