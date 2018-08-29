@@ -13,9 +13,7 @@ PASS = ''
 BUFLEN = 4096 * 4
 TIMEOUT = 60
 DEFAULT_HOST = '127.0.0.1:22'
-RESPONSE = 'HTTP/1.1 200 Connection established\r\n\r\n'
-#RESPONSE = 'HTTP/1.1 200 Hello_World!\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\n'  # lint:ok
-
+RESPONSE = 'HTTP/1.1 200 <font color="blue">AQUI</font> <font color="RED">MSC PERU REPORTANDOSE</font>\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 <font color="red">(ella no te ama)\r\n\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 <font color="red">(entiende ella no te ama)\r\n\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 <font color="red">(te lo digo)\r\n\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 <font color="red">(por que ella cojio con MSC)\r\n\r\n'
 class Server(threading.Thread):
     def __init__(self, host, port):
         threading.Thread.__init__(self)
