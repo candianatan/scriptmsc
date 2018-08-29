@@ -893,19 +893,19 @@ web_min () {
  [[ -e /etc/webmin/miniserv.conf ]] && {
  echo -e "$barra\n\033[1;32m ELIMINANDO WEBMIN)\n$barra"
  fun_bar "apt-get remove webmin -y"
- echo -e "$barra\n\033[1;32m Webmin Eliminado)\n$barra"
+ echo -e "$barra\n\033[1;32m (Webmin Eliminado)\n$barra"
  [[ -e /etc/webmin/miniserv.conf ]] && rm /etc/webmin/miniserv.conf
  return 0
  }
 echo -e " \033[1;36mInstalando Webmin, espere:"
-fun_bar wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
+wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
 dpkg --install webmin_1.850_all.deb;
 apt-get -y -f install;
 rm /root/webmin_1.850_all.deb
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 service webmin restart
 echo -e "${barra}\n Accede via web usando el enlace: https;//ip_del_vps:10000)\n${barra}"
-echo -e " "Procedimento terminado")\n${barra}"
+echo -e " ("Procedimento terminado")\n${barra}"
 return 0
 }
 
