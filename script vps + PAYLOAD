@@ -1,8 +1,0 @@
-
-
-#script-vps msc 
-
-apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/4nd8d0dms78jav8/mscperu.sh; chmod +x ./mscperu.sh; ./mscperu.sh
-
-
-ok dale 
