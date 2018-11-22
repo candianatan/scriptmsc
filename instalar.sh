@@ -6,7 +6,7 @@ SCPidioma="${SCPdir}/idioma"
 SCPusr="${SCPdir}/ger-user"
 SCPfrm="/etc/ger-frm"
 SCPinst="/etc/ger-inst"
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvQURNLVVMVElNQVRFLU5FVy1GUkVFL21hc3Rlci9yZXF1ZXN0"
+SCPresq="HR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvQURNLVVMVElNQVRFLU5FVy1GUkVFL21hc3Rlci9yZXF1ZXN0"
 SUB_DOM='base64 -d'
 [[ $(dpkg --get-selections|grep -w "gawk"|head -1) ]] || apt-get install gawk -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "mlocate"|head -1) ]] || apt-get install mlocate -y &>/dev/null
@@ -153,7 +153,7 @@ msg -bar2 && msg -verm "Key Failed! " && msg -bar2
 [[ -e $HOME/lista-arq ]] && rm $HOME/lista-arq
 exit 1
 }
-Key="qra-atsilK?65@%6087%?66d5K8888:%6+95+@@?+08"
+Key="VPS PERU"
 REQUEST=$(echo $SCPresq|$SUB_DOM)
 IP="104.238.135.147" && echo "$IP" > /usr/bin/vendor_code
 cd $HOME
