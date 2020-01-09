@@ -1,3 +1,5 @@
+https://raw.githubusercontent.com/candianatan/testScript/master/mscperu.sh
+
 # scriptmsc
 
 
